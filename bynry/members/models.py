@@ -5,5 +5,5 @@ class Request(models.Model):
     requestBy = models.IntegerField(null=True)
     requestType = models.TextField(null=True) 
     requestDetails = models.TextField()
-    requestDate = models.DateField(default = datetime.datetime.now().date())
-    requestImage = models.FileField(null=True)
+    requestDate = models.DateField(default = datetime.date.today())
+    requestImage = models.ImageField(upload_to='images', null=True)
