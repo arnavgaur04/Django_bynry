@@ -35,4 +35,17 @@ def viewrequest(request):
 
   return HttpResponse(template.render(context, request))
 
+def user(request):
+  if request.user.id == None:
+    return render(request, 'home.html')
+  
+  requestBy = request.user.id
+  data = request.user
+  template = loader.get_template('user.html')
+  context = {
+    'data': data,
+  }
+
+  return HttpResponse(template.render(context, request))
+
 

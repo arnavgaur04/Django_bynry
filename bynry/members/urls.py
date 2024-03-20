@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('newrequest/', views.newrequest, name='newrequest'),
     path('viewrequest/', views.viewrequest, name='viewrequest'),
+    path('user/', views.user, name='user')
 ]
 
 if settings.DEBUG:  

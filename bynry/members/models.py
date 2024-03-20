@@ -6,4 +6,5 @@ class Request(models.Model):
     requestType = models.TextField(null=True) 
     requestDetails = models.TextField()
     requestDate = models.DateField(default = datetime.date.today())
+    requestHandleDate = models.DateField(null=True)
     requestImage = models.ImageField(upload_to='images', null=True)
