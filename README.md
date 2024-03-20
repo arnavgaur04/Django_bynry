@@ -50,3 +50,23 @@ python3 manage.py runserver
     - productionfiles: Django puts all the static files here.
 
 
+
+
+
+#### Credentials:
+
+1. user1:
+    - username: user1
+    - password: personuser1
+
+2. user2:
+    - username: user2
+    - password: personuser2
+
+3. user3:
+    - username: user3
+    - password: personuser3
+
+4. admin:
+    - username: admin
+    - password: admin1234
