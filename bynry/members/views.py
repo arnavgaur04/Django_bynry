@@ -16,7 +16,9 @@ def newrequest(request):
     print("this is post")
     requestType = request.POST['type']
     text = request.POST['text']
-    imagePath = request.FILES['fileName']
+    imagePath = None
+    if request.FILES:
+      imagePath = request.FILES['fileName']
     print(imagePath)
     Request_instance = Request.objects.create(requestBy = requestBy, requestType = requestType, requestDetails=text, requestImage = imagePath)
 
