@@ -6,8 +6,8 @@ This is a Django application that provides consumers a way to generate service r
 ### Using the project
 
 ```bash
-git clone https://github.com/arnavgaur04/Django_bynry
-cd bynry
+git clone https://github.com/arnavgaur04/DjangoBasedApp
+cd app
 ```
 
 ```bash
@@ -36,7 +36,7 @@ python3 manage.py runserver
 
 #### Directory Structure:
 
-    - bynry
+    - app
         - media: contains files that are uploaded.
 
     - members
